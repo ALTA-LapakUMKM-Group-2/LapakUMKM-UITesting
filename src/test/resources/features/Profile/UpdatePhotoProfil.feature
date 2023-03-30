@@ -13,3 +13,5 @@ Feature: Update photo profile
     Then user click on choose file
     And user click button Perbarui Profile Photo
     And photo profile success to update
+
+

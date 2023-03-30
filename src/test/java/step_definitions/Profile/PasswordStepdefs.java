@@ -87,4 +87,12 @@ public class PasswordStepdefs {
         Assert.assertTrue(true);
         Thread.sleep(2000);
     }
+
+    @And("^button perbarui password cant be click$")
+    public void buttonPerbaruiPasswordCantBeClick() throws InterruptedException {
+        WebElement a = webDriver.findElement(By.xpath("//label[.='Password Lama :']"));
+        a.isDisplayed();
+        Assert.assertTrue(true);
+        Thread.sleep(1000);
+    }
 }

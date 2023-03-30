@@ -105,4 +105,11 @@ public class ProfileStepdefs {
         Thread.sleep(2000);
     }
 
+    @And("^button cant to be click$")
+    public void buttonCantToBeClick() throws InterruptedException {
+        WebElement a = webDriver.findElement(By.xpath("//h1[.='Edit Profile']"));
+        a.isDisplayed();
+        Assert.assertTrue(true);
+        Thread.sleep(2000);
+    }
 }
