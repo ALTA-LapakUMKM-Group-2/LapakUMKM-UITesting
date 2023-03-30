@@ -39,7 +39,7 @@ public class ProfileStepdefs {
         WebElement a = webDriver.findElement(By.xpath("//h1[contains(text(),'Profile Detail Saya')]"));
         a.isDisplayed();
         Assert.assertTrue(true);
-        Thread.sleep(3000);
+        Thread.sleep(2000);
     }
 
     @When("^user click on edit profile$")
