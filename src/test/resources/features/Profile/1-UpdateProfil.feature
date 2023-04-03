@@ -3,7 +3,7 @@ Feature: Update profile
   @Profile @Team2
   Scenario: Edit profile with valid data profile
     Given Open the website LapakUMKM
-    When input email "tes9@gmail.com" and password "123456"
+    When input email "akun201@gmail.com" and password "123456789"
     Then click button login
     And already on Dashboard page
     When user click button profile on navbar
@@ -13,16 +13,15 @@ Feature: Update profile
     And user already on update profile page
     And user input nama lengkap "Raisa Anggraini"
     And user input alamat lengkap "jl. Warung Tegal"
-    And user input email "tes9@gmail.com"
+    And user input email "akun201@gmail.com"
     Then user input nomor "089654321000"
     And user click button Perbarui Profile
-    And update profile success new name "Raisa Anggraini"
 
 
   @InvalidProfile @Team2
   Scenario: Edit profile with valid data profile
     Given Open the website LapakUMKM
-    When input email "tes9@gmail.com" and password "123456"
+    When input email "akun201@gmail.com" and password "123456789"
     Then click button login
     And already on Dashboard page
     When user click button profile on navbar

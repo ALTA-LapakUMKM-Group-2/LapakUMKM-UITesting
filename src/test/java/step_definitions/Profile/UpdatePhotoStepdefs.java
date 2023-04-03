@@ -11,6 +11,8 @@ import org.openqa.selenium.WebElement;
 import step_definitions.Hooks;
 
 public class UpdatePhotoStepdefs {
+    public static final String DIR = System.getProperty("user.dir");
+
     private WebDriver webDriver;
     public UpdatePhotoStepdefs (){
         super();
@@ -28,7 +30,7 @@ public class UpdatePhotoStepdefs {
     @Then("^user click on choose file$")
     public void userClickOnChooseFile() throws InterruptedException {
         WebElement a = webDriver.findElement(By.xpath("//input[@id='upload_gambar']"));
-        String x = "/home/kukuh/AlteraAcademy/Capstone/LapakUMKM-UITesting/src/Image/img.png";
+        String x = DIR + "/src/Image/img.png";
         a.sendKeys(x);
         Thread.sleep(1000);
     }

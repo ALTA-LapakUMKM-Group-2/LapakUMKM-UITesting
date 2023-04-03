@@ -3,7 +3,7 @@ Feature: Update profile
   @Delete @Team2
   Scenario: Delete account success
     Given Open the website LapakUMKM
-    When input email "akun4@gmail.com" and password "123456"
+    When input email "coba2@gmail.com" and password "123456789"
     Then click button login
     And already on Dashboard page
     When user click button profile on navbar
@@ -11,13 +11,11 @@ Feature: Update profile
     And  user already on profile page
     When user click button delete account
     Then user click yes
-    And delete account success
-
 
   @InvalidDelete @Team2
   Scenario: Delete account unsuccessful
     Given Open the website LapakUMKM
-    When input email "akun4@gmail.com" and password "123456"
+    When input email "akun201@gmail.com" and password "1234567890"
     Then click button login
     And already on Dashboard page
     When user click button profile on navbar

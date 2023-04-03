@@ -1,6 +1,5 @@
 package step_definitions.HIstoryPaybill;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -10,10 +9,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import step_definitions.Hooks;
 
-public class DetailTransactionStepdefs {
+public class HistoryPaybillStepdefs {
 
     private WebDriver webDriver;
-    public DetailTransactionStepdefs(){
+    public HistoryPaybillStepdefs(){
         super();
         this.webDriver = Hooks.webDriver;
     }
@@ -46,7 +45,7 @@ public class DetailTransactionStepdefs {
 
     @And("^user direct modal detail transaction$")
     public void userDirectModalDetailTransaction() throws InterruptedException {
-        WebElement a = webDriver.findElement(By.id("radix-:rp:"));
+        WebElement a = webDriver.findElement(By.xpath("//p[@class='border-b-2 pb-2 font-semibold text-left text-sm font-medium dark:text-white dark:border-lapak']"));
         a.isDisplayed();
         Assert.assertTrue(true);
         Thread.sleep(1000);
@@ -54,24 +53,31 @@ public class DetailTransactionStepdefs {
 
     @And("^user click button Berikan Ulasan$")
     public void userClickButtonBerikanUlasan() throws InterruptedException {
-        WebElement a = webDriver.findElement(By.xpath("//button[@class='btn  bg-lapak border-none']"));
+        WebElement a = webDriver.findElement(By.xpath("//button[@class='btn btn-sm bg-lapak border-none']"));
         a.click();
         Thread.sleep(1000);
     }
 
     @And("^user input \"([^\"]*)\"$")
-    public void userInput(String arg0) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    public void userInput(String ulasan) throws InterruptedException {
+        WebElement a = webDriver.findElement(By.xpath("//textarea[@id='comment']"));
+        a.sendKeys(ulasan);
+        Thread.sleep(1000);
+        WebElement b = webDriver.findElement(By.xpath("//form[@class='w-10/12 mx-auto mt-5']//div[4]"));
+        b.click();
+        Thread.sleep(1000);
     }
 
     @And("^user send ulasan$")
-    public void userSendUlasan() {
+    public void userSendUlasan() throws InterruptedException {
+        WebElement a = webDriver.findElement(By.xpath("//button[@id='btn-feedback']"));
+        a.click();
+        Thread.sleep(2000);
     }
 
     @When("^user click one product$")
     public void userClickOneProduct() throws InterruptedException {
-        WebElement a = webDriver.findElement(By.cssSelector(".my-4 > div:nth-of-type(2) > [href='#']"));
+        WebElement a = webDriver.findElement(By.xpath("//div[@class='my-4 gap-y-5 gap-x-5 grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mx-auto mt-10']/div[1]/a[1]"));
         a.click();
         Thread.sleep(3000);
     }
@@ -85,8 +91,8 @@ public class DetailTransactionStepdefs {
 
     @Then("^user click button confirm and pay$")
     public void userClickButtonConfirmAndPay() throws InterruptedException {
-        WebElement a = webDriver.findElement(By.xpath("//button[@class='btn btn-wide flex bg-lapak border-none 2xl:w-full text-white hover:bg-lapak hover:text-white hover:translate-y-2 2xl:font-semibold 2xl:text-xl']"));
+        WebElement a = webDriver.findElement(By.xpath("//div[@class='flex justify-center mt-20']"));
         a.click();
-        Thread.sleep(20000);
+        Thread.sleep(10000);
     }
 }
