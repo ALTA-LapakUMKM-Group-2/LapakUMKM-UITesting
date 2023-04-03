@@ -12,9 +12,10 @@ public class Hooks {
     @Before
     public void openBrowser(){
         ChromeOptions a = new ChromeOptions();
+        a.addArguments("--remote-allow-origins=*");
         WebDriverManager.chromedriver().setup();
         webDriver= new ChromeDriver(a);
-        String URL = "https://www.saucedemo.com/";
+        String URL = "https://lapak-umkm-test-pase1-jwwm3668y-acamalaka.vercel.app/";
         webDriver.get(URL);
         webDriver.manage().window().maximize();
     }
