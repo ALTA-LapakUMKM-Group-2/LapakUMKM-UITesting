@@ -51,7 +51,7 @@ public class ProfileStepdefs {
 
     @And("^user already on update profile page$")
     public void userAlreadyOnUpdateProfilePage() throws InterruptedException {
-        WebElement a = webDriver.findElement(By.xpath("//h1[.='Edit Profile']"));
+        WebElement a = webDriver.findElement(By.xpath("//h2[.='Edit Profile']"));
         a.isDisplayed();
         Assert.assertTrue(true);
         Thread.sleep(2000);

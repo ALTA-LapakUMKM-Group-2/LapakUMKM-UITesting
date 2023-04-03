@@ -16,7 +16,7 @@ Feature: Update profile
     And user input email "tes9@gmail.com"
     Then user input nomor "089654321000"
     And user click button Perbarui Profile
-    And update profile success new name "nama terbaru"
+    And update profile success new name "Raisa Anggraini"
 
 
   @InvalidProfile @Team2
