@@ -14,7 +14,7 @@ public class CartPage {
         this.driver = driver;
     }
 
-    @FindBy(css = ".my-4 > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(2) svg:nth-of-type(1)")
+    @FindBy(xpath = "//div[@class='my-4 gap-y-5 gap-x-5 grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mx-auto mt-10']/div[3]//button[@class='btn btn-sm bg-lapak border-none hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-blue-300']")
     private WebElement addCart;
     public void AddCart(){
         addCart.click();
@@ -36,5 +36,27 @@ public class CartPage {
     private WebElement verifyCartPage;
     public boolean VerifyCartPage(){
         return verifyCartPage.isDisplayed();
+    }
+
+    @FindBy(id = "checkcart")
+    private WebElement clickOneCheckBox;
+    public void ClickOneCheckBox() {
+        clickOneCheckBox.click();
+    }
+
+    @FindBy(css = "p:nth-of-type(3)")
+    private WebElement verifyTotalAmount;
+    public int VerifyTotalAmount() {
+        String getAmount = verifyTotalAmount.getText();
+        String trimString = getAmount.substring(12);
+        String replacePoint = trimString.replace(".","");
+        int convertStringToInteger = Integer.parseInt(replacePoint);
+        return convertStringToInteger;
+    }
+
+    @FindBy(css = ".w-8")
+    private WebElement cartButton;
+    public void CartButton() {
+        cartButton.click();
     }
 }
