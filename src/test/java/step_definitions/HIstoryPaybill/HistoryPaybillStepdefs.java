@@ -24,7 +24,7 @@ public class HistoryPaybillStepdefs {
         Thread.sleep(1000);
         WebElement b = webDriver.findElement(By.xpath("//a[.='Riwayat Belanja']"));
         b.click();
-        Thread.sleep(1000);
+        Thread.sleep(3000);
     }
 
     @And("^user already on History Pembelian page$")
@@ -32,7 +32,7 @@ public class HistoryPaybillStepdefs {
         WebElement a = webDriver.findElement(By.cssSelector(".mt-12"));
         a.isDisplayed();
         Assert.assertTrue(true);
-        Thread.sleep(15000);
+        Thread.sleep(5000);
     }
 
     @Then("^user click on button detail transaction$")
@@ -93,6 +93,37 @@ public class HistoryPaybillStepdefs {
     public void userClickButtonConfirmAndPay() throws InterruptedException {
         WebElement a = webDriver.findElement(By.xpath("//div[@class='flex justify-center mt-20']"));
         a.click();
-        Thread.sleep(10000);
+        Thread.sleep(5000);
+    }
+
+    @Then("^user click detail transaction$")
+    public void userClickDetailTransaction() throws InterruptedException {
+        WebElement a = webDriver.findElement(By.cssSelector(".transform"));
+        a.click();
+        Thread.sleep(5000);
+    }
+
+    @And("^User appear detail transaction$")
+    public void userAppearDetailTransaction() throws InterruptedException {
+        WebElement a = webDriver.findElement(By.xpath("//p[@class='border-b-2 pb-2 font-semibold text-left text-sm font-medium dark:text-white dark:border-lapak']"));
+        a.isDisplayed();
+        Assert.assertTrue(true);
+        Thread.sleep(1000);
+    }
+
+    @Then("^user click detail button bayar sekarang$")
+    public void userClickDetailButtonBayarSekarang() throws InterruptedException {
+        WebElement a = webDriver.findElement(By.id("btn-balas"));
+        a.click();
+        Thread.sleep(2000);
+    }
+
+    @And("^User direct in payment page$")
+    public void userDirectInPaymentPage() throws InterruptedException {
+        webDriver.getWindowHandles().forEach(tab->webDriver.switchTo().window(tab));
+        WebElement a = webDriver.findElement(By.xpath("//div[@class='payment-list-title']"));
+        a.isDisplayed();
+        Assert.assertTrue(true);
+        Thread.sleep(3000);
     }
 }

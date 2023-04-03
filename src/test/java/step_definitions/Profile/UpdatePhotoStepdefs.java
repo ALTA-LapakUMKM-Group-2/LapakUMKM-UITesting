@@ -30,7 +30,7 @@ public class UpdatePhotoStepdefs {
     @Then("^user click on choose file$")
     public void userClickOnChooseFile() throws InterruptedException {
         WebElement a = webDriver.findElement(By.xpath("//input[@id='upload_gambar']"));
-        String x = DIR + "/src/Image/img.png";
+        String x = DIR + "/src/Image/raissaanggiani.jpg";
         a.sendKeys(x);
         Thread.sleep(1000);
     }
