@@ -5,7 +5,8 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.example.PageObject.LoginPage;
+
+import org.example.PageObject.SignIn.LoginPage;
 import org.junit.Assert;
 
 import static step_definitions.Hooks.webDriver;
@@ -21,6 +22,7 @@ public class LoginStepDef {
     @When("^input email \"([^\"]*)\" and password \"([^\"]*)\"$")
     public void inputEmailAndPassword(String email, String pswd) {
         LoginPage loginPage = new LoginPage(webDriver);
+        loginPage.setClickMasuk();
         loginPage.setEmailSignIn(email);
         loginPage.setPasswordSignIn(pswd);
     }
