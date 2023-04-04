@@ -47,12 +47,12 @@ public class DeleteAccountStepdefs {
     public void userClickNo() throws InterruptedException {
         WebElement a = webDriver.findElement(By.xpath("//button[@class='swal2-cancel swal2-styled swal2-default-outline']"));
         a.click();
-        Thread.sleep(5000);
+        Thread.sleep(7000);
     }
 
     @And("^back to profile page$")
     public void backToProfilePage() throws InterruptedException {
-        WebElement a = webDriver.findElement(By.xpath("//h1[@class='text-zinc-800 text-[30px] md:text-[30px] lg:text-[30px] 2xl:text-[40px] text-center md:text-start lg:text-start font-semibold md:mt-10 lg:mt-16 2xl:mt-20 tracking-wider dark:text-white']"));
+        WebElement a = webDriver.findElement(By.xpath("//h1[@class='text-zinc-800 text-[30px] md:text-[30px] lg:text-[30px] 2xl:text-[40px] text-center md:text-start lg:text-start font-semibold md:mt-10 lg:mt-16 2xl:mt-5 tracking-wider dark:text-white']"));
         a.isDisplayed();
         Assert.assertTrue(true);
         Thread.sleep(1000);

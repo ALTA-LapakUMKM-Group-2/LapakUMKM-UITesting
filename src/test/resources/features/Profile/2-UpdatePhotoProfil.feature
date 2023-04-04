@@ -3,7 +3,7 @@ Feature: Update photo profile
   @PhotoProfile @Team2
   Scenario: Update photo profile with new image
     Given Open the website LapakUMKM
-    When input email "tes9@gmail.com" and password "123456"
+    When input email "akun201@gmail.com" and password "1234567890"
     Then click button login
     And already on Dashboard page
     When user click button profile on navbar
