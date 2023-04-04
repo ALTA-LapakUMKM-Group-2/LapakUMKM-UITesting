@@ -1,4 +1,4 @@
-package org.example.PageObject;
+package org.example.PageObject.SignIn;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +10,17 @@ public class LoginPage {
     public LoginPage(WebDriver driver){
         PageFactory.initElements(driver, this);
         this.driver = driver;
+    }
+
+    @FindBy(xpath = "//div[@class='w-14 rounded-full']")
+    private WebElement clickProfile1;
+    public void setClickProfile1(){
+        clickProfile1.click();
+    }
+    @FindBy(xpath = "//a[.='Masuk']")
+    private WebElement clickMasuk;
+    public void setClickMasuk(){
+        clickMasuk.click();
     }
 
     @FindBy(xpath = "//div[@class='login relative flex flex-col justify-center min-h-screen overflow-hidden']")

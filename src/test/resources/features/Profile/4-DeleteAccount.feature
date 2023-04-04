@@ -1,6 +1,6 @@
 Feature: Update profile
 
-  @Delete @Team2
+
   Scenario: Delete account success
     Given Open the website LapakUMKM
     When input email "deleteAkun1@gmail.com" and password "deleteAkun123456789"
