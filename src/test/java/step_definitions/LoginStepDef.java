@@ -7,15 +7,21 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.example.PageObject.LoginPage;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import static step_definitions.Hooks.webDriver;
 
 public class LoginStepDef {
     @Given("^Open the website LapakUMKM$")
-    public void openTheWebsiteLapakUMKM() {
+    public void openTheWebsiteLapakUMKM() throws InterruptedException {
+        WebElement a = webDriver.findElement(By.xpath("//div[@class='dropdown dropdown-end']//div[@class='avatar']"));
+        a.click();
+        WebElement b = webDriver.findElement(By.xpath("//a[.='Masuk']"));
+        b.click();
+        Thread.sleep(2000);
         LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertTrue(loginPage.verifyLoginPage());
-
     }
 
     @When("^input email \"([^\"]*)\" and password \"([^\"]*)\"$")
@@ -36,6 +42,6 @@ public class LoginStepDef {
     public void alreadyOnDashboardPage() throws InterruptedException {
         LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertTrue(loginPage.verifyDashboardPage());
-        Thread.sleep(3000);
+        Thread.sleep(6000);
     }
 }

@@ -31,7 +31,7 @@ public class ProfileStepdefs {
     public void userClickProfileOnDropdownSubbutton() throws InterruptedException {
         WebElement a = webDriver.findElement(By.xpath("//a[@id='link-profile']"));
         a.click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
     }
 
     @And("^user already on profile page$")
@@ -51,7 +51,7 @@ public class ProfileStepdefs {
 
     @And("^user already on update profile page$")
     public void userAlreadyOnUpdateProfilePage() throws InterruptedException {
-        WebElement a = webDriver.findElement(By.xpath("//h1[.='Edit Profile']"));
+        WebElement a = webDriver.findElement(By.xpath("//h2[.='Edit Profile']"));
         a.isDisplayed();
         Assert.assertTrue(true);
         Thread.sleep(2000);
@@ -92,14 +92,15 @@ public class ProfileStepdefs {
     @And("^user click button Perbarui Profile$")
     public void userClickButtonPerbaruiProfile() throws InterruptedException {
         WebElement a;
-        a = new WebDriverWait(webDriver, 2).until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='rounded-xl bg-lapak w-full max-w-full undefined px-6 py-2 text-[15px] md:text-[15px] lg:text-[14px] 2xl:text-[18px] font-semibold capitalize tracking-wider text-zinc-50 hover:bg-sky-500 disabled:cursor-not-allowed disabled:bg-zinc-400 false']")));
+        a = new WebDriverWait(webDriver, 2).until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='btn-update']")));
         a.click();
-        Thread.sleep(7000);
+        a.click();
+        Thread.sleep(10000);
     }
 
     @And("^update profile success new name \"([^\"]*)\"$")
     public void updateProfileSuccess(String namaTerbaru) throws InterruptedException {
-        WebElement a = webDriver.findElement(By.xpath("//p[text()='"+namaTerbaru+"']"));
+        WebElement a = webDriver.findElement(By.xpath("//p[contains(text(),'"+namaTerbaru+"')]"));
         a.isDisplayed();
         Assert.assertTrue(true);
         Thread.sleep(2000);
@@ -107,7 +108,7 @@ public class ProfileStepdefs {
 
     @And("^button cant to be click$")
     public void buttonCantToBeClick() throws InterruptedException {
-        WebElement a = webDriver.findElement(By.xpath("//h1[.='Edit Profile']"));
+        WebElement a = webDriver.findElement(By.xpath("//h2[.='Edit Profile']"));
         a.isDisplayed();
         Assert.assertTrue(true);
         Thread.sleep(2000);
