@@ -15,7 +15,7 @@ public class Hooks {
         a.addArguments("--remote-allow-origins=*");
         WebDriverManager.chromedriver().setup();
         webDriver= new ChromeDriver(a);
-        String URL = "https://lapak-umkm-test3.vercel.app/";
+        String URL = "https://lapakumkm.netlify.app/";
         webDriver.get(URL);
         webDriver.manage().window().maximize();
     }

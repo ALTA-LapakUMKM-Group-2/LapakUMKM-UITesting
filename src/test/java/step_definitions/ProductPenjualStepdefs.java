@@ -39,7 +39,7 @@ public class ProductPenjualStepdefs {
         productPenjual.setClickDataDiri();
         Thread.sleep(3000);
         productPenjual.setClickProductPenjual();
-        Thread.sleep(8000);
+        Thread.sleep(10000);
     }
 
 
@@ -177,14 +177,14 @@ public class ProductPenjualStepdefs {
         Thread.sleep(5000);
     }
 
-    @Then("^user see pop up add new photo$")
+    @And("^user see pop up add new photo$")
     public void userSeePopUpAddNewPhoto() throws InterruptedException {
         ProductPenjual productPenjual = new ProductPenjual(webDriver);
         Assert.assertTrue(productPenjual.setPopupUploadPhoto());
         Thread.sleep(3000);
     }
 
-    @And("^user click upload foto and choose photo to upload$")
+    @Then("^user click upload foto and choose photo to upload$")
     public void userClickUploadFotoAndChoosePhotoToUpload() throws InterruptedException {
         ProductPenjual productPenjual = new ProductPenjual(webDriver);
         productPenjual.setBtnUploadPhoto();
@@ -200,11 +200,42 @@ public class ProductPenjualStepdefs {
 
     }
 
-    @And("^user click upload foto and choose file other extension to upload$")
-    public void userClickUploadFotoAndChooseFileOtherExtensionToUpload() {
+    @Then("^user click upload foto and choose file other extension to upload$")
+    public void userClickUploadFotoAndChooseFileOtherExtensionToUpload() throws InterruptedException {
+        ProductPenjual productPenjual = new ProductPenjual(webDriver);
+        productPenjual.setBtnUploadPhotoExtension();
+        productPenjual.setBtnSubmit();
+        Thread.sleep(8000);
     }
 
     @And("^user see error pop up$")
-    public void userSeeErrorPopUp() {
+    public void userSeeErrorPopUp() throws InterruptedException {
+        ProductPenjual productPenjual = new ProductPenjual(webDriver);
+        Assert.assertTrue(productPenjual.setPopupUploadPhotoError());
+        Thread.sleep(1000);
+    }
+
+    @Then("^user click upload foto and choose file lrge size to upload$")
+    public void userClickUploadFotoAndChooseFileLrgeSizeToUpload() throws InterruptedException {
+        ProductPenjual productPenjual = new ProductPenjual(webDriver);
+        productPenjual.setBtnUploadPhotoLarge();
+        productPenjual.setBtnSubmit();
+        Thread.sleep(12000);
+    }
+
+    @And("^user chose photo for delete and user click button hapus$")
+    public void userChosePhotoForDeleteAndUserClickButtonHapus() throws InterruptedException {
+        ProductPenjual productPenjual = new ProductPenjual(webDriver);
+        productPenjual.setBtnHapusPhoto();
+        Thread.sleep(2000);
+        productPenjual.setBtnYakin();
+        Thread.sleep(5000);
+    }
+
+    @Then("^user succesfully delete photo produk$")
+    public void userSuccesfullyDeletePhotoProduk() throws InterruptedException {
+        ProductPenjual productPenjual = new ProductPenjual(webDriver);
+        Assert.assertTrue(productPenjual.setPopupUploadPhotoS());
+        Thread.sleep(3000);
     }
 }

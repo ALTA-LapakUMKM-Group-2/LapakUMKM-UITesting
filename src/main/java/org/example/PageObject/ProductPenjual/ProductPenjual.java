@@ -111,7 +111,17 @@ public class ProductPenjual {
     private WebElement btnSubmit;
 
     public void setBtnSubmit() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView();", btnSubmit);
         btnSubmit.click();
+    }
+
+    @FindBy(xpath = "//label[2]/button[@class='btn btn-sm btn-outline btn-error mt-2']")
+    private WebElement btnHapusPhoto;
+
+    public void setBtnHapusPhoto() {
+
+        btnHapusPhoto.click();
     }
 
     @FindBy(xpath = "//div[@class='stat-value text-lapak']")
@@ -189,6 +199,14 @@ public class ProductPenjual {
         return true;
     }
 
+    @FindBy(xpath = "//h2[@class='text-xl font-semibold ml-10 text-gray-900 dark:text-gray-100']")
+    private WebElement popupUploadPhotoError;
+
+    public boolean setPopupUploadPhotoError() {
+        popupUploadPhotoError.isDisplayed();
+        return true;
+    }
+
     @FindBy(css = ".tooltip-top .font-semibold")
     private WebElement popupUploadPhotoS;
 
@@ -196,7 +214,7 @@ public class ProductPenjual {
         popupUploadPhotoS.isDisplayed();
         return true;
     }
-    @FindBy(xpath = "//th[.='2']//preceding::img[@alt='produk.jpg']")
+    @FindBy(xpath = "//th[.='2']/following-sibling::td//child::img[@alt='produk.jpg']")
     private WebElement btnPhoto;
 
     public void setBtnPhoto() {
@@ -210,5 +228,21 @@ public class ProductPenjual {
         String dir = System.getProperty("user.dir");
         String x = dir + "/src/Image/baju.jpg";
        getUploadPhoto.sendKeys(x);
+    }
+
+    @FindBy(xpath = "//input[@id='dropzone-file']")
+    private WebElement getUploadPhotoExtension;
+    public void setBtnUploadPhotoExtension() {
+        String dir = System.getProperty("user.dir");
+        String x = dir + "/src/Image/A002.json";
+        getUploadPhotoExtension.sendKeys(x);
+    }
+
+    @FindBy(xpath = "//input[@id='dropzone-file']")
+    private WebElement getUploadPhotoLarge;
+    public void setBtnUploadPhotoLarge() {
+        String dir = System.getProperty("user.dir");
+        String x = dir + "/src/Image/4k.jpg";
+        getUploadPhotoLarge.sendKeys(x);
     }
 }
