@@ -35,9 +35,9 @@ public class ProductPenjualStepdefs {
     public void userAlreadyOnPageProductPenjual() throws InterruptedException {
         ProductPenjual productPenjual = new ProductPenjual(webDriver);
         productPenjual.setClickProfile();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         productPenjual.setClickDataDiri();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         productPenjual.setClickProductPenjual();
         Thread.sleep(10000);
     }
