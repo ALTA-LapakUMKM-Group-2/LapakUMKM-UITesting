@@ -1,4 +1,4 @@
-@Team
+@Team2
 Feature: Produk penjual page functionality
 
   Scenario: user tambah produk with valid data
@@ -70,5 +70,5 @@ Feature: Produk penjual page functionality
     And user already on page product penjual
     When user user selects the product and click photo produk
     And user see pop up add new photo
-    And user chose photo for delete and user click button hapus
+    And user choose photo for delete and user click button hapus
     Then user succesfully delete photo produk

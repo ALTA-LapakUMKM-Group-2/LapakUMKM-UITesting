@@ -20,15 +20,15 @@ public class LoginStepDef {
         a.click();
         WebElement b = webDriver.findElement(By.xpath("//a[.='Masuk']"));
         b.click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertTrue(loginPage.verifyLoginPage());
+        Thread.sleep(5000);
     }
 
     @When("^input email \"([^\"]*)\" and password \"([^\"]*)\"$")
     public void inputEmailAndPassword(String email, String pswd) {
         LoginPage loginPage = new LoginPage(webDriver);
-        loginPage.setClickMasuk();
         loginPage.setEmailSignIn(email);
         loginPage.setPasswordSignIn(pswd);
     }

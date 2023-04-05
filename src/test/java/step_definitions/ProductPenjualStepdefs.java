@@ -223,7 +223,7 @@ public class ProductPenjualStepdefs {
         Thread.sleep(12000);
     }
 
-    @And("^user chose photo for delete and user click button hapus$")
+    @And("^user choose photo for delete and user click button hapus$")
     public void userChosePhotoForDeleteAndUserClickButtonHapus() throws InterruptedException {
         ProductPenjual productPenjual = new ProductPenjual(webDriver);
         productPenjual.setBtnHapusPhoto();
