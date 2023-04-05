@@ -1,3 +1,4 @@
+@Team2
 Feature: Update photo profile
 
   @PhotoProfile @Team2
