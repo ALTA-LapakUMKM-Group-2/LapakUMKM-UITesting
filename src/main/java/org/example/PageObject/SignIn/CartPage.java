@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CartPage {
+public class  CartPage {
 
     public static WebDriver driver;
 
@@ -26,7 +26,7 @@ public class CartPage {
         addToCart.click();
     }
 
-    @FindBy(xpath = "//button[@class='swal2-confirm swal2-styled']")
+    @FindBy(css = ".swal2-confirm")
     private WebElement clickOkSuccesAddCart;
     public void ClickOkSuccesAddCart(){
         clickOkSuccesAddCart.click();
@@ -59,4 +59,47 @@ public class CartPage {
     public void CartButton() {
         cartButton.click();
     }
+
+    @FindBy(css = ".ml-2")
+    private WebElement decreaseItem;
+    public void DecreaseItem() {
+        decreaseItem.click();
+    }
+
+    @FindBy(css = ".mr-2")
+    private WebElement increaseItem;
+    public void increaseItem() {
+        increaseItem.click();
+    }
+
+    @FindBy(css = ".btn-outline")
+    private WebElement deleteCart;
+    public void DeleteCart() {
+        deleteCart.click();
+    }
+
+    @FindBy(css = ".swal2-confirm")
+    private WebElement confirmDelete;
+    public void ConfirmDelete() {
+        confirmDelete.click();
+    }
+
+    @FindBy(id = "submit")
+    private WebElement buttonBeli;
+    public void Buttonbeli() {
+        buttonBeli.click();
+    }
+    @FindBy(css = "[alt='Lapak_umkm']")
+    private WebElement homeButton;
+    public void HomeButton() {
+        homeButton.click();
+    }
+    @FindBy(xpath = "//div[22]//button[@class='btn btn-sm bg-lapak border-none hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-blue-300']")
+    private WebElement addCart2;
+    public void AddCart2(){
+        addCart2.click();
+    }
+
+
+
 }
