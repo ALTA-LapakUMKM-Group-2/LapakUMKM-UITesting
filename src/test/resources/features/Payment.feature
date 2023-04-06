@@ -1,5 +1,5 @@
+@Team2
 Feature: Payment
-  @Payment
 
   Scenario: Fungsional button buy
     Given Open the website LapakUMKM

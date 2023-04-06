@@ -108,9 +108,9 @@ public class CartStepDef {
     public void clickAddToCart2() throws InterruptedException {
         CartPage cartPage = new CartPage(webDriver);
         cartPage.AddToCart();
-        Thread.sleep(3000);
-        cartPage.ClickOkSuccesAddCart();
         Thread.sleep(10000);
+        cartPage.ClickOkSuccesAddCart();
+        Thread.sleep(15000);
     }
 
 
