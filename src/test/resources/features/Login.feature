@@ -1,9 +1,11 @@
 
 Feature: Login
   @Login
-  Scenario: Login With Valid Email And Password
-    Given Open the website LapakUMKM
-    When input email "tes9@gmail.com" and password "123456"
-    Then click button login
-    And already on Dashboard page
-
+  Scenario: Login user
+    Given User open the website
+    When User click prof button
+    Then User click entry button
+    And User already on login pages
+    Then User input email "quality9@gmail.com" and password "Quality1234"
+    And User click button login
+    And User already on Dashboard pages

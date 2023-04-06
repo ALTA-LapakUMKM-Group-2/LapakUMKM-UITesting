@@ -1,21 +1,21 @@
-package org.example.PageObject;
+package org.example.PageObject.SignIn;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class LoginPages {
     public static WebDriver driver;
-    public LoginPage(WebDriver driver){
+    public LoginPages(WebDriver driver){
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
 
-    @FindBy(xpath = "//div[@class='login relative flex flex-col justify-center min-h-screen overflow-hidden']")
-    private WebElement loginPage;
+    @FindBy(css = ".login")
+    private WebElement loginPages;
     public boolean verifyLoginPage(){
-        loginPage.isDisplayed();
+        loginPages.isDisplayed();
         return true;
     }
 
@@ -39,9 +39,9 @@ public class LoginPage {
     }
 
     @FindBy(xpath = "//div[@class='flex flex-col w-11/12 mx-auto items-center']")
-    private WebElement dashboardPage;
-    public boolean verifyDashboardPage(){
-        dashboardPage.isDisplayed();
+    private WebElement dashboardPages;
+    public boolean verifyDashboardPages(){
+        dashboardPages.isDisplayed();
         return true;
     }
 
