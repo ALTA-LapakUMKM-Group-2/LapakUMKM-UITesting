@@ -35,7 +35,7 @@ public class LoginStepDef {
     public void clickButtonLogin() throws InterruptedException {
         LoginPage loginPage = new LoginPage(webDriver);
         loginPage.setBtnLogin();
-        Thread.sleep(5000);
+        Thread.sleep(6000);
     }
 
     @And("^already on Dashboard page$")
