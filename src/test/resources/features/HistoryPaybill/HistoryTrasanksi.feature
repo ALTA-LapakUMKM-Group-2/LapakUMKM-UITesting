@@ -1,7 +1,7 @@
 Feature: Detail transaksi
 
   @DetailTrasaction @Team2
-  Scenario: Login With Valid Email And Password
+  Scenario: Verify detail transaction
     Given Open the website LapakUMKM
     When input email "akun201@gmail.com" and password "1234567890"
     Then click button login
@@ -13,7 +13,7 @@ Feature: Detail transaksi
 
 
   @PaymentNow @Team2
-  Scenario: Login With Valid Email And Password
+  Scenario: Verify payment now
     Given Open the website LapakUMKM
     When input email "akun201@gmail.com" and password "1234567890"
     Then click button login
