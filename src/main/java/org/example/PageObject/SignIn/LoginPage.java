@@ -50,7 +50,7 @@ public class LoginPage {
     }
 
 
-    @FindBy(xpath = "//div[@class='flex flex-col w-11/12 mx-auto items-center']")
+    @FindBy(xpath = "//button[@class='font-semibold md:flex text-4xl text-white hover:text-accent']")
 
     private WebElement dashboardPage;
     public boolean verifyDashboardPage(){
