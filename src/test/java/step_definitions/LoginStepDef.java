@@ -20,10 +20,10 @@ public class LoginStepDef {
         a.click();
         WebElement b = webDriver.findElement(By.xpath("//a[.='Masuk']"));
         b.click();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertTrue(loginPage.verifyLoginPage());
-        Thread.sleep(5000);
+        Thread.sleep(2000);
     }
 
     @When("^input email \"([^\"]*)\" and password \"([^\"]*)\"$")
@@ -44,6 +44,6 @@ public class LoginStepDef {
     public void alreadyOnDashboardPage() throws InterruptedException {
         LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertTrue(loginPage.verifyDashboardPage());
-        Thread.sleep(6000);
+        Thread.sleep(8000);
     }
 }
