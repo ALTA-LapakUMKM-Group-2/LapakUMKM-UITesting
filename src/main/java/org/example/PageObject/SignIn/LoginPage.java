@@ -49,7 +49,9 @@ public class LoginPage {
         btnLogin.click();
     }
 
-    @FindBy(xpath = "//p[@class='dark:text-white font-semibold text-sm md:text-lg lg:text-xl']")
+
+    @FindBy(xpath = "//div[@class='flex flex-col w-11/12 mx-auto items-center']")
+
     private WebElement dashboardPage;
     public boolean verifyDashboardPage(){
         dashboardPage.isDisplayed();
