@@ -12,6 +12,17 @@ public class LoginPage {
         this.driver = driver;
     }
 
+    @FindBy(xpath = "//div[@class='w-14 rounded-full']")
+    private WebElement clickProfile1;
+    public void setClickProfile1(){
+        clickProfile1.click();
+    }
+    @FindBy(xpath = "//a[.='Masuk']")
+    private WebElement clickMasuk;
+    public void setClickMasuk(){
+        clickMasuk.click();
+    }
+
     @FindBy(xpath = "//div[@class='login relative flex flex-col justify-center min-h-screen overflow-hidden']")
     private WebElement loginPage;
     public boolean verifyLoginPage(){
@@ -38,7 +49,9 @@ public class LoginPage {
         btnLogin.click();
     }
 
+
     @FindBy(xpath = "//div[@class='flex flex-col w-11/12 mx-auto items-center']")
+
     private WebElement dashboardPage;
     public boolean verifyDashboardPage(){
         dashboardPage.isDisplayed();

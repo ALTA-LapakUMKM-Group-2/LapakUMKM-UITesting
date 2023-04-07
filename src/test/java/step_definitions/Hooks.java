@@ -10,12 +10,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class Hooks {
     public static WebDriver webDriver;
     @Before
-    public void openBrowser(){
+    public void openBrowser() {
         ChromeOptions a = new ChromeOptions();
         a.addArguments("--remote-allow-origins=*");
         WebDriverManager.chromedriver().setup();
         webDriver= new ChromeDriver(a);
-        String URL = "https://lapakumkm.netlify.app/login";
+        String URL = "https://lapakumkm.netlify.app/";
         webDriver.get(URL);
         webDriver.manage().window().maximize();
     }
