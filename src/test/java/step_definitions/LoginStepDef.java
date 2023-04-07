@@ -5,7 +5,8 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.example.PageObject.LoginPage;
+
+import org.example.PageObject.SignIn.LoginPage;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -19,9 +20,10 @@ public class LoginStepDef {
         a.click();
         WebElement b = webDriver.findElement(By.xpath("//a[.='Masuk']"));
         b.click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertTrue(loginPage.verifyLoginPage());
+        Thread.sleep(5000);
     }
 
     @When("^input email \"([^\"]*)\" and password \"([^\"]*)\"$")

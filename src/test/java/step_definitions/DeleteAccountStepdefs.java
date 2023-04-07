@@ -4,7 +4,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import gherkin.lexer.Th;
-import org.example.PageObject.LoginPage;
+import org.example.PageObject.SignIn.LoginPage;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

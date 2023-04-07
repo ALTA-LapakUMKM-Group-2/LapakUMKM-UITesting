@@ -1,3 +1,4 @@
+@Team2
 Feature: Detail transaksi
 
   @DetailTrasaction @Team2
