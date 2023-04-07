@@ -7,6 +7,6 @@ Feature: Register
     And already on the login page
     And click regis button
     Then already on the register page
-    And input full name "tes01" and email "tes01@gmail.com" and password "Quality123456"
+    And input full name "testing" and email "testing@gmail.com" and password "QA123456"
     Then click register button
     And already on dashboard page
