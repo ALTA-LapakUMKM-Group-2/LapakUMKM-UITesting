@@ -1,8 +1,8 @@
 package step_definitions;
 
-import PageObject.LandingPage;
-import PageObject.LoginPage;
-import PageObject.RegisterPage;
+import org.example.PageObject.LandingPage;
+import org.example.PageObject.LoginPage;
+import org.example.PageObject.RegisterPage;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class Hooks {
     public static WebDriver webDriver;
     @Before
-    public void openBrowser(){
+    public void openBrowser() {
         ChromeOptions a = new ChromeOptions();
         a.addArguments("--remote-allow-origins=*");
         WebDriverManager.chromedriver().setup();
@@ -24,3 +24,4 @@ public class Hooks {
         webDriver.quit();
     }
 }
+
