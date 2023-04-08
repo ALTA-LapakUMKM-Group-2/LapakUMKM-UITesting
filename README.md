@@ -1,6 +1,6 @@
 <div align="center">
     <br>
-        <img src="https://user-images.githubusercontent.com/96028679/229820089-b660b411-ac45-47d0-a63f-1926e10f5771.png" alt="LapakUMKM" width="200px"/>
+        <img src="https://user-images.githubusercontent.com/96028679/229820089-b660b411-ac45-47d0-a63f-1926e10f5771.png" alt="LapakUMKM" width="500px"/>
 
 # About LapakUMKM
 
@@ -40,7 +40,7 @@
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 ![Selenium](https://img.shields.io/badge/-selenium-000000?style=for-the-badge&logoColor=black)
 ![Serenity BDD](https://img.shields.io/badge/-serenit%20ybdd-16a67a?style=for-the-badge&logoColor=black)
-![Cucumber](https://img.shields.io/badge/-cucumber-4bc47b?style=for-the-badge&logoColor=black))
+![Cucumber](https://img.shields.io/badge/-cucumber-4bc47b?style=for-the-badge&logoColor=black)
 
 ## Contributors
 
