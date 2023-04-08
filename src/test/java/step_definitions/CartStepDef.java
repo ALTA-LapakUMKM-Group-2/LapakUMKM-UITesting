@@ -70,7 +70,7 @@ public class CartStepDef {
     public void clickDeleteCart() throws InterruptedException {
         CartPage cartPage = new CartPage(webDriver);
         cartPage.DeleteCart();
-        Thread.sleep(5000);
+        Thread.sleep(8000);
         cartPage.ConfirmDelete();
         Thread.sleep(20000);
     }

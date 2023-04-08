@@ -28,7 +28,7 @@ public class ProductPenjualStepdefs {
         loginPage.setEmailSignIn("testingqe0@gmail.com");
         loginPage.setPasswordSignIn("@Qwerty1231");
         loginPage.setBtnLogin();
-        Thread.sleep(7000);
+        Thread.sleep(12000);
     }
 
     @And("^user already on page product penjual$")
