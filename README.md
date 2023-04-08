@@ -42,10 +42,11 @@
 ![Serenity BDD](https://img.shields.io/badge/-serenit%20ybdd-16a67a?style=for-the-badge&logoColor=black)
 ![Cucumber](https://img.shields.io/badge/-cucumber-4bc47b?style=for-the-badge&logoColor=black))
 
-## Contributor
+## Contributors
 
-<a href="https://github.com/ALTA-LapakUMKM-Group-2/LapakUMKM-UITesting/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ALTA-LapakUMKM-Group-2/LapakUMKM-UITesting" />
-</a>
-
+- [Muhammad Farhan Darmawan](https://github.com/farhandarmawan1)
+- [Kukuh Pradipto](https://github.com/kukuhpradipto)
+- [Taufik HM (Opik)](https://github.com/taufikhm58)
+- [Dede Suryawan A. P](https://github.com/dedesuryawan)
+- [Alia Ulfah](https://github.com/alyaulp)
 
