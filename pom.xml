@@ -132,7 +132,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>LapakUMKM Web Testing</projectName>
+                            <projectName>LapakUMKMWebTesting</projectName>
                             <outputDirectory>${project.build.directory}/Report/cucumber-reports</outputDirectory>
                             <cucumberOutput>${project.build.directory}/cucumber/cucumber.json</cucumberOutput>
                             <skippedFails>true</skippedFails>

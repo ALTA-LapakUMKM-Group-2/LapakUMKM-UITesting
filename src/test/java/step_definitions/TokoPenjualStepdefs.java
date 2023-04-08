@@ -21,7 +21,7 @@ public class TokoPenjualStepdefs {
     public void userAlreadyOnPageTokoPenjual() throws InterruptedException {
        TokoPenjual tokoPenjual = new TokoPenjual(webDriver);
        tokoPenjual.setBtnProduct();
-       Thread.sleep(6000);
+       Thread.sleep(8000);
        tokoPenjual.setBtnToko();
        Thread.sleep(8000);
 
@@ -31,7 +31,7 @@ public class TokoPenjualStepdefs {
     public void userChoseProductAndClikTitleProduct() throws InterruptedException {
         TokoPenjual tokoPenjual = new TokoPenjual(webDriver);
         tokoPenjual.setBtnProductToko();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
     }
 
     @Then("^user direct to see detail product$")
@@ -80,7 +80,7 @@ public class TokoPenjualStepdefs {
     public void userClickFieldChatAndFillText() {
         TokoPenjual tokoPenjual = new TokoPenjual(webDriver);
         tokoPenjual.setBtnField();
-        tokoPenjual.setGetFieldChat("halo gan");
+        tokoPenjual.setGetFieldChat("gan ok");
     }
 
     @And("^user click send chat$")
@@ -92,7 +92,7 @@ public class TokoPenjualStepdefs {
 
     @Then("^user succesfuly chat penjual$")
     public void userSuccesfulyChatPenjual() throws InterruptedException {
-        WebElement a = webDriver.findElement(By.xpath("//div[.='halo gan']"));
+        WebElement a = webDriver.findElement(By.xpath("//div[.='gan ok']"));
         a.isDisplayed();
         Assert.assertTrue(true);
         Thread.sleep(1000);
