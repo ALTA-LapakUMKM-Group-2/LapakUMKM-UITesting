@@ -28,10 +28,10 @@
    ```
 
 ## 📝 Reports
-- [Report API Test Automation](https://lapakumkm-reportapiautomation.netlify.app/index.html)
+- [Report Web Test Automation](https://lapakumkm-uitestingreport.netlify.app/feature-overview.html)
 
-![api automation report](https://img001.prntscr.com/file/img001/Ietc4fy8TS-pfRefeaJkOw.png)
-![api automation report](https://img001.prntscr.com/file/img001/L_wFew7BRtaGDCNCoxkzEQ.png)
+![api automation report](https://img001.prntscr.com/file/img001/olqK4DvoTrGoaS44RQSv9A.png)
+![api automation report](https://img001.prntscr.com/file/img001/32X-zKMmRviEsS7eRdG35g.png)
 
     
 
