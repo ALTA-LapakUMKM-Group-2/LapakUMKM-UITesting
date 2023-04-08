@@ -4,7 +4,7 @@ Feature: Update Password
   @Password @Team2
   Scenario: Update password with valid data profile
     Given Open the website LapakUMKM
-    When input email "updateData@gmail.com" and password "updateData123456789"
+    When input email "kukuh100@gmail.com" and password "12345678901"
     Then click button login
     And already on Dashboard page
     When user click button profile on navbar
@@ -12,10 +12,10 @@ Feature: Update Password
     And  user already on profile page
     When user click on edit password
     And user already on update password page
-    And user input password lama "updateData123456789"
-    And user input password baru "updateData12345678"
+    And user input password lama "12345678901"
+    And user input password baru "123456789012"
     And user click icon eyes in password baru field
-    And user input konfirmasi password "updateData12345678"
+    And user input konfirmasi password "123456789012"
     And user click icon eyes in konfirmasi password field
     And user click button perbarui password
     And update profile success

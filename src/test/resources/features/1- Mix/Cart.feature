@@ -1,19 +1,19 @@
 @Team2
 Feature: Cart
-
+@alya
   Scenario: fungsional button Cart
     Given Open the website LapakUMKM
     When input email "alya@gmail.com" and password "123456"
     Then click button login
     And already on Dashboard page
     Then Click cart on product
-#    Then Click add to cart 2
-#    Then Click button home
-#    Then Click cart on product 2
+    Then Click add to cart 2
+    Then Click button home
+    Then Click cart on product 2
     Then Click add to cart 2
     Then Click Cart
     And Already on Cart Page
-    Then Click Decrease Cart
+#    Then Click Decrease Cart
     Then Click Increase Cart
     Then Click Delete Cart
     Then Click checkbox

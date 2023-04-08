@@ -38,7 +38,7 @@ public class  CartPage {
         return verifyCartPage.isDisplayed();
     }
 
-    @FindBy(id = "checkcart")
+    @FindBy(css = "thead #checkcart")
     private WebElement clickOneCheckBox;
     public void ClickOneCheckBox() {
         clickOneCheckBox.click();

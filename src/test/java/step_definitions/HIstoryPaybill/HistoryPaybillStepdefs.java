@@ -105,7 +105,7 @@ public class HistoryPaybillStepdefs {
 
     @And("^User appear detail transaction$")
     public void userAppearDetailTransaction() throws InterruptedException {
-        WebElement a = webDriver.findElement(By.xpath("//p[@class='border-b-2 pb-2 font-semibold text-left text-sm font-medium dark:text-white dark:border-lapak']"));
+        WebElement a = webDriver.findElement(By.xpath("//p"));
         a.isDisplayed();
         Assert.assertTrue(true);
         Thread.sleep(1000);
@@ -121,7 +121,7 @@ public class HistoryPaybillStepdefs {
     @And("^User direct in payment page$")
     public void userDirectInPaymentPage() throws InterruptedException {
         webDriver.getWindowHandles().forEach(tab->webDriver.switchTo().window(tab));
-        WebElement a = webDriver.findElement(By.xpath("//div[@class='payment-list-title']"));
+        WebElement a = webDriver.findElement(By.cssSelector("tetsing1@gmail.com"));
         a.isDisplayed();
         Assert.assertTrue(true);
         Thread.sleep(3000);

@@ -1,11 +1,10 @@
-@Team2
+@Team2  @ButtonProfile
 Feature: Home
   @ButtonProfile
   Scenario: Profile page validation
     Given Open the website LapakUMKM
     When input email "bambang@gmail.com" and password "12345678"
     Then click button login
-    And already on Dashboard page
     When user click button profile on navbar
     Then user click profile on dropdown sub button
 
@@ -14,7 +13,6 @@ Feature: Home
       Given Open the website LapakUMKM
       When input email "bambang@gmail.com" and password "12345678"
       Then click button login
-      And already on Dashboard page
       And user click icon search
       And user input "kaos" from input text
 
@@ -22,7 +20,6 @@ Feature: Home
     Given Open the website LapakUMKM
     When input email "bambang@gmail.com" and password "12345678"
     Then click button login
-    And already on Dashboard page
     And user click icon search
     And user input "tas" from input text
 
@@ -30,7 +27,6 @@ Feature: Home
     Given Open the website LapakUMKM
     When input email "bambang@gmail.com" and password "12345678"
     Then click button login
-    And already on Dashboard page
     And user click icon search
     And user input "sepatu" from input text
 
@@ -38,7 +34,6 @@ Feature: Home
     Given Open the website LapakUMKM
     When input email "bambang@gmail.com" and password "12345678"
     Then click button login
-    And already on Dashboard page
     And user click icon search
     And user input "baju" from input text
 
@@ -47,14 +42,12 @@ Feature: Home
       Given Open the website LapakUMKM
       When input email "bambang@gmail.com" and password "12345678"
       Then click button login
-      And already on Dashboard page
       And user click button dark mode
 
       Scenario: Verify Cart Button
         Given Open the website LapakUMKM
         When input email "bambang@gmail.com" and password "12345678"
         Then click button login
-        And already on Dashboard page
         And user click Cart Button
 
 

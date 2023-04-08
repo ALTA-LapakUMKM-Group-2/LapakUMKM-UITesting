@@ -1,7 +1,7 @@
 @Team2
 Feature: Update profile
 
-  @Profile @Team2
+  @Profile
   Scenario: Edit profile with valid data profile
     Given Open the website LapakUMKM
     When input email "akun201@gmail.com" and password "1234567890"
@@ -19,7 +19,7 @@ Feature: Update profile
     And user click button Perbarui Profile
 
 
-  @InvalidProfile @Team2
+  @InvalidProfile
   Scenario: Edit profile with valid data profile
     Given Open the website LapakUMKM
     When input email "akun201@gmail.com" and password "1234567890"

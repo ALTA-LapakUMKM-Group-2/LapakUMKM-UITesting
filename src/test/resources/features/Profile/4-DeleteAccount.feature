@@ -4,7 +4,7 @@ Feature: Update profile
 
   Scenario: Delete account success
     Given Open the website LapakUMKM
-    When input email "deleteAkun1@gmail.com" and password "deleteAkun123456789"
+    When input email "tetsing3@gmail.com" and password "Kukuh123456789"
     Then click button login
     And already on Dashboard page
     When user click button profile on navbar

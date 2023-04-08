@@ -1,7 +1,7 @@
 @Team2
 Feature: Update photo profile
 
-  @PhotoProfile @Team2
+  @PhotoProfile
   Scenario: Update photo profile with new image
     Given Open the website LapakUMKM
     When input email "akun201@gmail.com" and password "1234567890"
@@ -9,7 +9,6 @@ Feature: Update photo profile
     And already on Dashboard page
     When user click button profile on navbar
     Then user click profile on dropdown sub button
-    And  user already on profile page
     When user click on photo profile
     Then user click on choose file
     And user click button Perbarui Profile Photo

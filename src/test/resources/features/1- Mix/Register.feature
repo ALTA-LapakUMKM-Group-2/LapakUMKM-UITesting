@@ -8,6 +8,6 @@ Feature: Register
     And already on the login page
     And click regis button
     Then already on the register page
-    And input full name "testing" and email "testinggg@gmail.com" and password "QA123456"
+    And input full name "AA toufik idaman ukhti" and email "taarufyuk@gmail.com" and password "sayangkamu1234567890"
     Then click register button
     And already on dashboard page

@@ -1,4 +1,4 @@
-@Team2
+@Team2 @payment
 Feature: Payment
 
   Scenario: Fungsional button buy

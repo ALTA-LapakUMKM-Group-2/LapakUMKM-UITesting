@@ -42,7 +42,7 @@ public class Home {
 
     @And("^user click Cart Button$")
     public void userClickCartButton() throws InterruptedException {
-        WebElement a = webDriver.findElement(By.xpath(".w-8"));
+        WebElement a = webDriver.findElement(By.xpath("//body/div[@id='root']/div[1]/div[1]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/*[1]"));
         a.click();
         Thread.sleep(2000);
     }
