@@ -15,7 +15,7 @@ public class TokoPenjual {
         this.driver = driver;
     }
 
-    @FindBy(xpath = "//h5[.='Kaos Oblong']//following::img[1]")
+    @FindBy(xpath = "//img[@src='https://storage.googleapis.com/images_lapak_umkm/product/1680757955497660944_80.png']")
     private WebElement btnProduct;
     public void setBtnProduct() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -24,14 +24,14 @@ public class TokoPenjual {
     }
 
 
-    @FindBy(xpath = "//div[@class='w-20 rounded-full']/img[@src='https://storage.googleapis.com/images_lapak_umkm/profile/1680460071693596443_5.png']")
+    @FindBy(xpath = "//h1[@class='mb-5 cursor-pointer']")
     private WebElement btnToko;
     public void setBtnToko() {
         btnToko.click();
     }
 
 
-    @FindBy(xpath = "//h5[.='Sepatu Asli Cibaduyut']//following::img[1]")
+    @FindBy(xpath = "//img[@src='https://storage.googleapis.com/images_lapak_umkm/product/1680757955497660944_80.png']")
     private WebElement btnProductToko;
     public void setBtnProductToko() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
